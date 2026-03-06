@@ -7,6 +7,7 @@ import Help from "../pages/Help";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
+import PrivateRouting from "../privaterouting/PrivateRouting";
 
 
 
@@ -41,7 +42,9 @@ export const routes=createBrowserRouter([
             },
             {
                 path:'/dashboard',
-                element:<Dashboard/>
+                element:<PrivateRouting>
+                    <Dashboard/>
+                </PrivateRouting>
             }
 
         ]

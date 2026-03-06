@@ -1,5 +1,7 @@
+import axios from "axios";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [formdata, setformdata] = useState({
@@ -7,22 +9,43 @@ const Login = () => {
     password: "",
   });
 
+
+const navigate =useNavigate()
+
   const handleInput = (e) => {
     const { name, value } = e.target;
     setformdata({ ...formdata, [name]: value });
   };
 
-  const handleForm = (e) => {
+  const handleForm = async(e) => {
     e.preventDefault();
-    console.log("Login Data:", formdata);
+    const {data}=await axios.get("http://localhost:3000/users")
+    console.log(data)
+    const curreenuser=data.find((ele)=>(ele.email===formdata.email) )
+    console.log(curreenuser)
+    if(! curreenuser){
+      toast.error("Email id is not register")
+      return
+    }
+    if(curreenuser.password!==formdata.password){
+      toast.error("Invalid Password")
+    }
 
-//!send the data
+
+    
+
+//!generate a token and store the token in local storage
+
+const token="vhgweehrioewurjok.iewr879453njhuw832yt8h23"+curreenuser.id
+localStorage.setItem("jwt_token",JSON.stringify(token))
+localStorage.setItem("user_id",curreenuser.id)
 
 
-
+toast.success("Login Successfull",{position:"bottom-right"})
+navigate("/dashboard")
     setformdata({
       email: "",
-      password: "",
+      password: ""
     });
   };
 
