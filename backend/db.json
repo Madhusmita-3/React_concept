@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      " username": "Madhusmita",
+      "age": "23",
+      "email": "Madhusmita@123",
+      "password": "123",
+      "dob": "15/12/2001",
+      "city": "bangloar",
+      "gender": "female",
+      "id": "e8b2"
+    },
+    {
+      "id": "bc66",
+      "username": "madhu",
+      "age": "23",
+      "email": "madhusmita@gmail.com",
+      "password": "1234",
+      "dob": "2026-03-10",
+      "city": "Hyderabad",
+      "gender": "Female"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

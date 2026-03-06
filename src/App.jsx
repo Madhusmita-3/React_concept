@@ -10,13 +10,16 @@
 // import FormHandling from "./concepts/formhandling/FormHandling"
 import { ToastContainer } from "react-toastify"
 // import TailwindcssConcept from "./concepts/tailwindcssconcept/TailwindcssConcept"
-import RouterLayout from "./concepts/reactrouting/RouterLayout"
-import PropsDrilling from "./concepts/propsdrlling/PropsDrilling"
-import ContextApiConcept from "./concepts/contextapi/ContextApiConcept"
-import HOC from "./concepts/hoc/HOC"
-import ReactOptimization from "./concepts/optimization/ReactOptimization"
-import HooksHome from "./concepts/hooks/HooksHome"
+// import RouterLayout from "./concepts/reactrouting/RouterLayout"
+// import PropsDrilling from "./concepts/propsdrlling/PropsDrilling"
+// import ContextApiConcept from "./concepts/contextapi/ContextApiConcept"
+// import HOC from "./concepts/hoc/HOC"
+// import ReactOptimization from "./concepts/optimization/ReactOptimization"
+// import HooksHome from "./concepts/hooks/HooksHome"
+import CrudOperation from "./concepts/crudoperation/CrudOperation"
 // import AxiosConcept from "./concepts/axiosconcept/AxiosConcept"
+import './index.css'
+
 
 
 const App =()=>{
@@ -27,7 +30,7 @@ const App =()=>{
             {/* <TernaryRender/> */}
             {/* <PropsHome/> */}
             {/* <Icons_Implement/> */}
-            <HooksHome/>
+            {/* <HooksHome/> */}
             {/* <DefaultPropsConcepts/> */}
             {/* <ReactFragments/> */}
             {/* <ListAndKeys/> */}
@@ -43,6 +46,8 @@ const App =()=>{
             {/* <ContextApiConcept/> */}
             {/* <HOC/> */}
             {/* <ReactOptimization/> */}
+
+            <CrudOperation/>
 
 
             <ToastContainer/>
