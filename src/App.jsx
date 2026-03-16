@@ -16,9 +16,14 @@ import { ToastContainer } from "react-toastify"
 // import HOC from "./concepts/hoc/HOC"
 // import ReactOptimization from "./concepts/optimization/ReactOptimization"
 // import HooksHome from "./concepts/hooks/HooksHome"
-import CrudOperation from "./concepts/crudoperation/CrudOperation"
+// import CrudOperation from "./concepts/crudoperation/CrudOperation"
 // import AxiosConcept from "./concepts/axiosconcept/AxiosConcept"
 import './index.css'
+import UseStateCase from "./concepts/specialcaseinterview/UseStateCase"
+import HooksHome from "./concepts/hooks/HooksHome"
+import TailwindResponsive from "./concepts/tailwindcssconcept/TailwindResponsive"
+import ReduxtoolkitConcept from "./concepts/reduxtoolkitconcept/ReduxtoolkitConcept"
+
 
 
 
@@ -47,7 +52,14 @@ const App =()=>{
             {/* <HOC/> */}
             {/* <ReactOptimization/> */}
 
-            <CrudOperation/>
+            {/* <CrudOperation/> */}
+
+            {/* <UseStateCase/> */}
+
+            {/* <TailwindResponsive/> */}
+
+            <ReduxtoolkitConcept/>
+           
 
 
             <ToastContainer/>

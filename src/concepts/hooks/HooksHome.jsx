@@ -2,6 +2,9 @@ import UseCallBackHook from "./usecallbackhook/UseCallBackHook"
 import UseEffectTask1 from "./useeffecthook/task/UseEffectTask1"
 import UseEffectHookHome from "./useeffecthook/UseEffectHookHome"
 import UseMemoHook from "./usememohook/UseMemoHook"
+
+import UseReducerfromHandle from "./usereducerhook/UseReducerfromHandle"
+import UseReducerHook from "./usereducerhook/UseReducerHook"
 import UseRefHook from "./userefhook/UseRefHook"
 import UseRefHookTask1 from "./userefhook/userefhooktask/UseRefHookTask1"
 import UseStateHook from "./usestatehook/UseStateHook"
@@ -26,7 +29,9 @@ const HooksHome=()=>{
 
             {/* <UseEffectTask1/> */}
             {/* <UseMemoHook/> */}
-            <UseCallBackHook/>
+            {/* <UseCallBackHook/> */}
+            {/* <UseReducerHook/> */}
+           <UseReducerfromHandle/>
         </div>
     )
 }
